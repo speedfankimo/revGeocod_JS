@@ -93,18 +93,18 @@ function setUpClickListener(map) {
 			//map.addObject(reverseGeocodeResult);
             ui.addBubble(new H.ui.InfoBubble(item.position, {
                 content: 
-				'<b>label :<b>'+item.address.label +'\n'+ 
-				'countryCode:<b>' +item.address.countryCode +'\n'+
-				'<b>countryName:<b>'+item.address.countryName +'\n'+ 
-				'<b>state:<b>'+item.address.state +'\n'+ 
-				'<b>countyCode:<b>'+item.address.countyCode +'\n'+ 
-				'<b>county:<b>'+item.address.county +'\n'+ 
-				'<b>city:<b>'+item.address.city +'\n'+ 
-				'<b>district:<b>'+item.address.district +'\n'+ 
-				'<b>subdistrict:<b>'+item.address.subdistrict +'\n'+ 
-				'<b>street:<b>'+item.address.street +'\n'+ 
-				'<b>postalCode:<b>'+item.address.postalCode +'\n'+ 
-				'<b>houseNumber:<b>'+item.address.houseNumber +'\n'
+				'<font color="#FF0000">label :</font>'+item.address.label +'<br>'+ 
+				'<font color="#FF0000">countryCode:</font>' +item.address.countryCode +'<br>'+
+				'<font color="#FF0000">countryName:</font>'+item.address.countryName +'<br>'+ 
+				'<font color="#FF0000">state:</font>'+item.address.state +'<br>'+ 
+				'<font color="#FF0000">countyCode:</font>'+item.address.countyCode +'<br>'+ 
+				'<font color="#FF0000">county:</font>'+item.address.county +'<br>'+ 
+				'<font color="#FF0000">city:</font>'+item.address.city +'<br>'+ 
+				'<font color="#FF0000">district:</font>'+item.address.district +'<br>'+ 
+				'<font color="#FF0000">subdistrict:</font>'+item.address.subdistrict +'<br>'+ 
+				'<font color="#FF0000">street:</font>'+item.address.street +'<br>'+
+				'<font color="#FF0000">postalCode:</font>'+item.address.postalCode +'<br>'+ 
+				'<font color="#FF0000">houseNumber:</font>'+item.address.houseNumber +'<br>'
             }));
             //reviseGeocodeResult.push(item.position)
 
@@ -136,7 +136,7 @@ function setUpClickListener(map) {
     // default style as the base layer:
     var map = new H.Map(
         document.getElementById('mapContainer'),
-        defaultLayers.vector.normal.map, {
+        defaultLayers.raster.normal.map, {
             zoom: 15,
             center: { lat: 25.037537, lng: 121.564376 },
         });
